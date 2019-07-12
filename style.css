@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(back.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: Lato;
+    font-weight: 300;
+    color: #555;
+}
+
+
+.wrapper {
+    opacity: 0.9;
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    background-color: #fff;
+    top: 20px;
+    left: 200px;
+    text-align: center;
+    box-shadow:10px 20px 40px rgba(0,0,0,0.3);
+
+}
+
+.active{
+    background-color: #f7f7f7;
+}
+.active .player-name{
+    font-weight:300;
+}
+
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    
+}
+.player-0-panel ,.player-1-panel {
+    
+    height: 600px;
+    width: 500px;
+    float: left;
+    padding: 100px;
+    
+}
+
+.player-name {
+    font-size: 40px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 20px 10px 20px 10px;
+    
+}
+
+.player-score {
+    font-size: 80px;
+    font-weight: 100;
+    padding-bottom: 130px;
+    color: #eb4d4d;
+    
+}
+
+.local-area-player {
+    background-color: #eb4d4d;
+    height: 85px;
+    width: 125px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+
+}
+
+.local-name {
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+}
+.local-score{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.random-dice {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 200px;
+    left: 45%;
+}
+
+button {
+    position: absolute;
+    width: 200px;
+    font-size: 20px;
+    left: 50%;
+    margin-top: 15px;
+    background: none;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    border: none;
+    transform: translateX(-50%);
+    font-family: lato;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+button:hover {
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+i{
+    color: #eb4d4d;
+    padding-right: 10px;
+    display: inline-block;
+    transition: margin 0.3s;
+    font-size: 26px;
+}
+
+button:hover i{
+    padding-right: 15px;
+}
+.new-game-btn {
+
+    top: 50px;
+}
+
+.roll-btn {
+
+    top: 400px;
+}
+
+.hold-btn {
+
+    top: 450px;
+}
+.final-score{
+    top: 520px;
+    color: #555;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+.winner{
+    background-color: cornsilk;
+    color: #eb4d4d;
+    font-size: 100px;
+}
