@@ -8,7 +8,7 @@ document.querySelector('.roll-btn').addEventListener('click',function(){
         var dice = Math.floor(Math.random() * 6) + 1;
 
         document.querySelector('.random-dice').style.display='block';
-        document.querySelector('.random-dice').src = 'dice-'+ dice +'.png';
+        document.querySelector('.random-dice').src = 'assets/images/dice-'+ dice +'.png';
 
         if (dice === 6 && lastDice === 6) {
             
